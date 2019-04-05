@@ -1,8 +1,10 @@
 /*
- * gcast045_lab2_part1.c
- *
- * Created: 4/4/2019 12:39:18 PM
- * Author : castr
+ * Partner: Jesse Garcia, jgarc269@ucr.edu 
+ * Lab Section: 027
+ * Assignment: Lab 2 Exercise 1
+ * Exercise Description: Garage door sensor
+ * 
+ * I acknowledge all content contained herein, excluding template or example code, is my own original work. 
  */ 
 
 #include <avr/io.h>
