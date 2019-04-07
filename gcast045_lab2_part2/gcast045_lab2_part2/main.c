@@ -31,9 +31,9 @@ int main(void)
 		space2 = PINA & 0x04;
 		space3 = PINA & 0x08;	
 		
-		cntavail = space0 + (space1 >> 1) + (space2 >> 2) + (space3 >> 3);
+		cntavail = space0 + (space1 >> 1) + (space2 >> 2) + (space3 >> 3);	//Shift every space to the bit 0x01. 1 + 1 + 1 + 1 = 4
 		
-		PORTC = 0x04 - cntavail;
+		PORTC = 0x04 - cntavail;												//Start with 4 spaces available and subtract spaces taken.
     }
 }
 
