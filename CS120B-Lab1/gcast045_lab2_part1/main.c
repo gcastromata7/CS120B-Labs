@@ -22,7 +22,7 @@ int main(void)
 	    garageDoor = PINA & 0x01;
 		lightSensor = PINA & 0x02;
 		
-		PORTB = (garageDoor == 1 && lightSensor == 0) ? 1 : 0;
+		PORTB = (garageDoor == 1 && lightSensor == 0) ? 1 : 0;	//Only condition where the output can be 1. 
     }
 }
 
