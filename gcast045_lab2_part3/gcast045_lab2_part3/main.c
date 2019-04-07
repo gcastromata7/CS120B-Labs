@@ -32,9 +32,10 @@ int main(void)
 	    space2 = PINA & 0x04;
 	    space3 = PINA & 0x08;
 	    
-	    cntavail = space0 + (space1 >> 1) + (space2 >> 2) + (space3 >> 3);
+	    cntavail = space0 + (space1 >> 1) + (space2 >> 2) + (space3 >> 3);	//Shift every space to the bit 0x01. 1 + 1 + 1 + 1 = 4
 	    
-		PORTC = cntavail == 4 ? 0x80 : (0x04 - cntavail);
+		PORTC = cntavail == 4 ? 0x80 : (0x04 - cntavail);					//If the lot is full, fill bit 7, else fill
+																			//the number of available spaces.
 		
 		
     }
